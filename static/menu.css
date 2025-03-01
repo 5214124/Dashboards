@@ -1,0 +1,43 @@
+#menu-container{
+    height: 100vh;
+    width: 10vw;
+    border-right: 1px solid #2C2C2C;
+}
+
+#choose-site-form{
+    display: grid;
+
+}
+
+.menu-button-container{
+    height: 75px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #2C2C2C;
+    cursor: pointer;
+    transition: scale 0.25s ease-in-out;
+    transition: background-color 0.25s, ease-out;
+}
+
+.menu-button-container:hover{
+    scale: 1.1;
+}
+
+.form-images{
+    width: 40px;
+    height: 40px;
+    transition: scale 0.25s ease-in-out;
+}
+
+.form-button{
+    height: 45px;
+    width: 100px;
+    background-color: #1E1E1E;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+}

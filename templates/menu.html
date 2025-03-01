@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet", href="{{url_for('static', filename='menu.css')}}">
+</head>
+<body>
+    <div id="menu-container">
+        <form id="choose-site-form" action="choose-site" method="POST">
+            <div class="menu-button-container">
+                <img class="form-images" src="{{url_for('static', filename='yt_logo.png')}}" alt="Youtube logo">
+                <button type="submit" class="form-button" value="Youtube">Youtube</button>
+            </div>
+            <div class="menu-button-container">
+                <img class="form-images" src="" alt="X logo">
+                <button class="form-button" type="submit" value="X">X</button>
+            </div>
+            <div class="menu-button-container">
+                <img class="form-images" src="" alt="placeholder logo">
+                <button type="submit" class="form-button" value="placeholder">placholder</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

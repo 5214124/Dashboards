@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet", href="{{url_for('static', filename='main.css')}}">
+    <title>Dashboard-menu</title>
+    <script src="https://kit.fontawesome.com/b32dc6af32.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <menu id="m">
+        {% include 'menu.html'%}
+    </menu>
+    <main id="main">
+        <div id="main-container">
+            <img id="youtube-logo" src="{{url_for('static',filename='yt_logo.png')}}" alt="YouTube logo">
+            <form id="main-search-form" action="/get_url" method="post">
+                <input id="main-search-text" 
+                type="text" 
+                placeholder="Paste link to a youtube video" 
+                name="text_url" 
+                pattern="(https:\/\/www.youtube.com\/.{1,75})" 
+                title="Please enter a valid YouTube link (e.g., https://www.youtube.com)." 
+                required>
+                <button id="main-search-button" type="submit"> 
+                    <i class="fa-solid fa-magnifying-glass"></i> 
+                </button>
+            </form>
+        </div>
+        </main>
+</body>
+</html>
