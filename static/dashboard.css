@@ -1,0 +1,33 @@
+:root{
+    --black: #1E1E1E;
+    --grey: #2C2C2C;
+    --grey-text-focus: #898989;
+    --white: #ffffff;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    background: var(--black); 
+    width: 90vw;
+    height: 100vh;
+}
+
+#dashboard-container{
+    display: flex;
+    flex-direction: column;
+}
+
+#dashboard-rest-container{
+    display: flex;
+    flex-direction: row;
+}
+
+#dashoard-menu{
+    padding: 0;
+}
+
+#dashboards{
+    justify-self: left;
+    width: 100%;
+}

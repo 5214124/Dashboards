@@ -3,20 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet", href="{{url_for('static', filename='main.css')}}">
+    <link rel="stylesheet", href="{{url_for('static', filename='dashboard.css')}}">
     <title>Dashboard-main</title>
 </head>
 <body>
-    <header>
-        {% include 'navbar.html' %}
-    </header>
-    <main>
-        <div>
-            {% include 'menu.html'%}
+    <div id="dashboard-container">
+        <div id="dashboard-header">
+            {% include 'navbar.html' %}
         </div>
-        <div>
-            <p>"hhehe"</p>
+        <div id="dashboard-rest-container">
+            <menu id="dashoard-menu">
+                <div>
+                    {% include 'menu.html'%}
+                </div>
+            </menu>
+            <main id="dashboards">
+                <div>
+                </div>
+            </main>
         </div>
-    </main>
+    </div>
 </body>
 </html>

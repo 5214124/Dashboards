@@ -1,18 +1,5 @@
-:root{
-    --black: #1E1E1E;
-    --grey: #2C2C2C;
-    --grey-text-focus: #898989;
-    --white: #ffffff;
-}
-
-body{
-    background: var(--black); 
-    width: 100vw;
-    height: 100vh;
-}
-
 #header{
-    width: 100vw;
+    width: 98.5vw;
     height: 60px;
     display: flex;
     justify-content: center;
